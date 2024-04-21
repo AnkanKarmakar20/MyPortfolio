@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d77ed67316.js" crossorigin="anonymous"></script>
+    <!-- <link rel="scr"> -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logofinal.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#websites">Websites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><b>Front-End Developer</b></p>
+                <h1>Hi, I'm <span class="myname">Ankan Karmakar</span> <br> from Andaman & Nicobar Islands</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-colo-1">
+                    <img src="Images/new pic.png">
+                </div>
+                <div class="about-colo-2">
+                    <h1 class="subs">About Me</h1>
+                    <p class="eng">I am a diligent and adaptable final-year Computer Science Engineering student specializing in Internet of Things at Chandigarh University. Hailing from the serene Andaman and Nicobar Islands, I bring a unique perspective and a strong work ethic to my academic pursuits. As a quick learner, I thrive in dynamic environments and possess a tenacity for overcoming challenges. My dedication to excellence is evident through my hardworking approach, consistently seeking opportunities to enhance my skills and contribute meaningfully. Passionate about leveraging technology for positive change, I aspire to apply my knowledge to create innovative solutions that make the world a better place.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>Web Development</span><br>HTML/CSS/JavaScript<br>Designing Web Interfaces</li>
+                        <li><span>Software Development</span><br>Python/C++/Kotlin<br>Problem-Solving/DSA</li>
+                        <li><span>Database Management</span><br>MySQL/PostgreSQL/Python Flask<br>Manipulation & Management of data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents second-sty" id="certifications">
+                        <ul>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/RXNKM5JWLHGH">Crash course on Python by Google</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/NYYM7QYLMCWK">Programming with JavaScript by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/2VKKMHEK3MDK">Version Control by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/3KA2ZLZV48LN">Introduction to Front-End Development by META</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22EE12S2387124002040936">Microprocessors and Microcontrollers</a></span><br>Issued by NPTEL</li>
+                        <li><span><a href="https://coursera.org/verify/professional-cert/PJP48MT7RHEF">Palo Alto Networks Cybersecurity Specialization</a></span><br>Issued by Coursera</li>
+                        <li><span><a href="https://www.coursera.org/account/accomplishments/verify/KQ3NBGURZEG2">Create Serverless Applications by Microsoft</a></span><br>Issued by Coursera</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>Bachelor of Engineering</span><br>Computer Science & Engineering with Specialization in Internet of Things<br>Chandiagrh University 2020-Present<br>Grade:7.41</li>
+                        <li><span>Intermediate / 12<sup>th</sup> CBSE</span><br>Navy Children School PortBlair<br>Subjects: Mathematics, Computer Science, Physics, Chemistry, English<br>Percentage: 95.2</li>
+                        <li><span>Matriculation / 10<sup>th</sup> CBSE</span><br>Navy Children School PortBlair<br>Subjects: Mathematics, Social Science, Science, Hindi, English<br>Percentage: 92.6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- -----------------------------projects--------------------------- -->
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subs">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-house-signal"></i>
+                    <h2>Home Automation</h2>
+                    <p>Engineered a home automation solution by integrating an 8-channel relay module and ESP 32, enabling remote appliance control; achieved significant cost savings by reducing monthly energy consumption by 25%. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-face-laugh-beam"></i>
+                    <h2>Emotion Recognizer</h2>
+                    <p>Trained and tested a model using machine learning to recognize emotion based on facial recognition. Capable of identifying 6 emotions - Happy, Sad, Neutral, Angry, Surprise, Rock.  </p>
+                    <a href="https://github.com/AnkanKarmakar20/Emotion-Recognizer">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <h2>Virtual AI Mouse</h2>   
+                    <p>Engineered an innovative virtual AI mouse through the use of pattern recognition for hand gesture control, 
+                        leveraging the system camera; increased user engagement and satisfaction by 40% in gaming industry. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="websites">
+        <div class="container">
+            <h1 class="subs">My Websites</h1>
+            <div class="web-list">
+                <div class="web1">
+                    <img src="Images/lubri.jpg">
+                    <div class="layer">
+                        <h3>LubriPulse Website</h3>
+                        <p>Made LubriPulse.com as test from potential employer</p>
+                        <a href="https://ankankarmakar20.github.io/Lubripulse/" class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+                <div class="web1">
+                    <img src="Images/kirito.jpg">
+                    <div class="layer">
+                        <h3>Food Management Website</h3>
+                        <p>Donate food through this website to ur nearest needy person yourself</p>
+                        <a href="#" class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+                <div class="web1">
+                    <img src="Images/s1.jpg">
+                    <div class="layer">
+                        <h3>Sasmeetra's Gallery</h3>
+                        <p>Made a video player gallery website for an instagram influencer client</p>
+                        <a href="#" class="fa-solid fa-up-right-from-square"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"  class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -------------------------Contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subs">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>ankan.karmakar0107@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7889212367</p>
+                    <div class="social-icons">
+                        <a href="#" class="fa-brands fa-facebook"></a>
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                        <a href="#" class="fa-brands fa-linkedin"></a>
+                        
+                    </div>
+                    <a href="Images/Ankan's Photo Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ⓒ Ankan. Made with pure <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var side = document.getElementById("sidemenu")
+
+    function openmenu(){
+        side.style.right = "0"
+    }
+
+    function closemenu(){
+        side.style.right = "-200px"
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVGobOhDYyaFdN2Y8CP87gdW-rG8tgR3ZoaRFRhNoZ1EwQQqAYhvUefQ1WLNeDHPC_jw/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Successfully Sent" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 1500)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
